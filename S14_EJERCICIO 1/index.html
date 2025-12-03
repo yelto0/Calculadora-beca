@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S14-Ejercicio1</title>
+
+    <!-- Enlazar HTML con la hoja de estilos externa -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenido principal del cuerpo de la página -->
+    <main>
+        <h1>Calculadora de Becas</h1>
+        <form>
+            <div>
+                <label for="">Promedio academico</label>
+                <input type="number" id="promedio">
+            </div>
+            <div>
+                <label for="">Ingreso familiar</label>
+                <input type="number" id="ingreso">
+            </div>
+            <div>
+                <label for="">Zona geografica</label>
+                <select id="zona">
+                    <option value="U">Urbana</option>
+                    <option value="R">Rural</option>
+                    <option value="F">Frontera</option>
+                </select>
+            </div>
+            <div>
+                <button onclick="calcularBeca()" type="button">Calcular la beca</button>
+            </div>
+            <div id="resultado"></div>
+        </form>
+    </main>
+    
+    <!-- Enlazar HTML con la librería de funciones de javascript -->
+    <script src="script.js"></script>
+</body>
+</html>
